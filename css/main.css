@@ -1,0 +1,110 @@
+body{
+  background-color: rgb(26, 2, 32);
+}
+.wifi{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: 300px;
+  border-radius: 50%;
+  border: 20px solid transparent;
+  border-top: 20px solid #ccc;
+  animation: wifi-1 5s ease-in infinite;
+}
+.wifi::before {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  top: -56px;
+  right: -54px;
+  border-radius: 50%;
+  border: 20px solid transparent;
+  border-top: 20px solid #ccc;
+  animation: wifi-2 5s ease-in infinite;
+}
+.wifi::after {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: -98px;
+  right: -93px;
+  border-radius: 50%;
+  border: 20px solid;
+  animation: wifi-3 5s ease-in infinite;
+}
+.nuqta{
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #fff;
+  left: 13px;
+  bottom: 13px;
+}
+@keyframes wifi-1 {
+  0% {
+    border-color: rgb(50, 50, 50);
+  }
+  15% {
+    border-color: #fff;
+  }
+  30% {
+    border-color: #fff;
+  }
+  100%{
+    border-color: rgb(50, 50, 50);
+  } 
+} 
+@keyframes wifi-2 {
+  0%{
+    border-color: rgb(50, 50, 50);
+  }
+  45%{
+    border-color: #fff;
+  }
+  60% {
+    border-color: #fff;
+  }
+  100%{
+    border-color: rgb(50, 50, 50);
+  } 
+} 
+@keyframes wifi-3 {
+  0%{
+    border-color: rgb(50, 50, 50);
+  }
+  75%{
+    border-color: #fff;
+  }
+  90%{
+    border-color: #fff;
+  }
+  100%{
+    border-color: rgb(50, 50, 50);
+  } 
+}                                
+.kv1{ 
+  width:  200px;
+  height:  200px;
+  background-color:  rgb(26, 2, 32);
+  position:absolute;
+  left: 67px;
+  top: -64px;
+  transform: rotate(44deg);
+  z-index: 2;
+}
+.kv2{ 
+  width:  300px;
+  height:  300px;
+  background-color:  rgb(26, 2, 32);
+  position:absolute;
+  left: -225px;
+  top: -1px;
+  transform: rotate(44deg);
+  z-index: 2;
+}
